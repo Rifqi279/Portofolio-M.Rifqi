@@ -3,79 +3,144 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio Rifqi</title>
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<script src="script.js"></script>
-
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <nav class="navbar">
   <div class="nav-container">
-    
+
+    <!-- LOGO -->
     <div class="logo">
-      <img src="resource/Logo.png" alt="Logo">
-      <span>M.Rifqi</span>
+      <img src="resource/Logo.png">
+      <span>Rifqi</span>
     </div>
 
-    <ul class="nav-links">
-      <li><a href="#about">Tentang</a></li>
+    <!-- NAVIGATION LINKS -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Project</a></li>
       <li><a href="#contact">Kontak</a></li>
     </ul>
 
+    <!-- MENU BUTTON (MOBILE) -->
+    <div class="menu-btn" id="menuBtn">☰</div>
+
   </div>
 </nav>
 
-  <header>
-    <h1>Muhammad Rifqi Arya Firdaus</h1>
-     <img src="resource/Foto_Rifqi.jpg" alt="Foto Rifqi" class="profile">
-    <p>UI/UX Enthusiast | Siswa SMKN 4 Bandung</p>
-  </header>
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-content">
 
-  <section id="about" class="about">
-    <h2>Tentang Saya</h2>
-    <p>
-      Saya adalah siswa RPL yang memiliki minat di bidang UI/UX Design dan web design.
-      Terbiasa menggunakan Figma dan memahami dasar HTML & CSS.
-    </p>
-  </section>
+    <!-- TEXT -->
+    <div class="hero-text">
+      <h1>Hi!</h1>
+      <h2>I Am Muhammad Rifqi</h2>
+      <h3>I'm a <span id="typing"></span></h3>
 
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML, CSS</li>
-      <li>Figma (UI Design)</li>
-      <li>Basic Web Development</li>
-      <li>Problem Solving</li>
-    </ul>
-  </section>
+      <p>UI/UX Enthusiast | Design Interest</p>
 
-  <section id="projects" class="projects">
-    <h2>Project</h2>
-    <div class="card">
-      <h3>Website SaranaKu</h3>
-      <p>Project sedang dalam tahap pengembangan. Akan segera diperbarui.</p>
+      <a href="#projects" class="btn">Lihat Project</a>
     </div>
 
-    <div class="card">
-      <h3>UI Design App</h3>
-      <p>Project sedang dalam tahap pengembangan. Akan segera diperbarui.</p>
-    </div>
-  </section>
+    <!-- IMAGE -->
+    <img src="resource/Rifqi.png" class="profile">
 
-  <section id="contact" class="contact">
-    <h2>Kontak</h2>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <h2>About</h2>
+  <p>
+    Saya adalah siswa RPL yang memiliki minat di bidang UI/UX Design dan web design.
+    Terbiasa menggunakan Figma dan memahami dasar HTML & CSS.
+  </p>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills">
+  <h2>Skills</h2>
+
+  <div class="grid">
+    <div class="card">HTML, CSS</div>
+    <div class="card">Figma (UI Design)</div>
+    <div class="card">Basic Web Dev</div>
+    <div class="card">Problem Solving</div>
+  </div>
+</section>
+
+<!-- ================= PROJECT ================= -->
+<section id="projects">
+  <h2>Project</h2>
+
+  <div class="grid">
+
+    <!-- CARD 1 -->
+    <div class="card project">
+      <div class="card-img">
+        <img src="resource/logo.png">
+      </div>
+      <h3>SaranaKu</h3>
+      <p>Masih dalam pengembangan.</p>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card project">
+      <div class="card-img">
+        <img src="resource/sample.png">
+      </div>
+      <h3>Echoes of Melody</h3>
+      <p>Masih dalam pengembangan.</p>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card project">
+      <div class="card-img">
+        <img src="resource/sample.png">
+      </div>
+      <h3>CostPoint</h3>
+      <p>Masih dalam pengembangan.</p>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="card project">
+      <div class="card-img">
+        <img src="resource/sample.png">
+      </div>
+      <h3>Android Studio</h3>
+      <p>Masih dalam pengembangan.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-box">
     <p>Email: aryarady279@gmail.com</p>
     <p>Instagram: oublie.Noire</p>
-    <p>Second Instagram: puree.phasee</p>
+    <p>Second IG: puree.phasee</p>
     <p>Github: Rifqi279</p>
-  </section>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 Rifqi</p>
-  </footer>
+<!-- ================= FOOTER ================= -->
+<footer>
+  © 2026 Rifqi
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
