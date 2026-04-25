@@ -60,3 +60,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+
+// ================= SCROLL REVEAL =================
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+
+    const revealPoint = 100; // jarak trigger
+
+    if (elementTop < windowHeight - revealPoint) {
+      el.classList.add("active");
+    }
+  });
+}
+
+// jalanin saat scroll
+window.addEventListener("scroll", revealOnScroll);
+
+// jalanin sekali saat load
+revealOnScroll();
